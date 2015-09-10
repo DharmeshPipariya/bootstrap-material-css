@@ -120,7 +120,7 @@ output {
     line-height: $line-height-base;
     color: $input-color;
     background-color: transparent;
-    background-image: linear-gradient($input-border-focus,$input-border-focus),linear-gradient(#d2d2d2,#d2d2d2);
+    background-image: linear-gradient($input-border-focus,$input-border-focus),linear-gradient($input-border,$input-border);
     background-size: 0 2px,100% 1px;
     background-repeat: no-repeat;
     background-position: center bottom,center calc(100% - 1px);
@@ -141,7 +141,8 @@ output {
     &[readonly],
     fieldset[disabled] & {
         background-color: transparent;
-        border-style: dashed;
+        border-bottom: 1px dashed $input-border;
+        background-image: none;
         opacity: 1; // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655
     }
 

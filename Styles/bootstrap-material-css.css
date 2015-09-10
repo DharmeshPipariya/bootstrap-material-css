@@ -2470,7 +2470,8 @@ output {
     color: #999; }
   .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
     background-color: transparent;
-    border-style: dashed;
+    border-bottom: 1px dashed #d2d2d2;
+    background-image: none;
     opacity: 1; }
   .form-control[disabled], fieldset[disabled] .form-control {
     cursor: not-allowed; }
@@ -3492,7 +3493,7 @@ tbody.collapse.in {
   color: #555555;
   text-align: center;
   background-color: #eeeeee;
-  border: 1px solid #ccc;
+  border: 1px solid #d2d2d2;
   border-radius: 2px; }
   .input-group-addon.input-sm,
   .input-group-sm > .input-group-addon,
