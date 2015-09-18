@@ -17,6 +17,8 @@
     cursor: pointer;
     text-transform: uppercase;
     background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+	background-size: 20%;
+	background-position: 50%;
     border: 0 solid transparent;
     white-space: nowrap;
     @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
@@ -33,7 +35,7 @@
 
     &:active,
     &.active {
-        background-image: none;
+		background-size: 1000%;
         @include box-shadow(0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2));
     }
 
@@ -60,26 +62,50 @@ a.btn {
 
 .btn-default {
     @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+	&:active {
+	background-color: darken($btn-default-bg, 12%);
+      @include gradient-radial(darken($btn-default-bg, 12%) 10%, $btn-default-bg 11%);
+    }
 }
 
 .btn-primary {
     @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+	&:active {
+	background-color: darken($btn-primary-bg, 12%);
+      @include gradient-radial(darken($btn-primary-bg, 12%) 10%, $btn-primary-bg 11%);
+    }
 }
 // Success appears as green
 .btn-success {
     @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
+	&:active {
+	background-color: darken($btn-success-bg, 12%);
+      @include gradient-radial(darken($btn-success-bg, 12%) 10%, $btn-success-bg 11%);
+    }
 }
 // Info appears as blue-green
 .btn-info {
     @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
+	&:active {
+	background-color: darken($btn-info-bg, 12%);
+      @include gradient-radial(darken($btn-info-bg, 12%) 10%, $btn-info-bg 11%);
+    }
 }
 // Warning appears as orange
 .btn-warning {
     @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
+	&:active {
+	background-color: darken($btn-warning-bg, 12%);
+      @include gradient-radial(darken($btn-warning-bg, 12%) 10%, $btn-warning-bg 11%);
+    }
 }
 // Danger and error appear as red
 .btn-danger {
     @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+	&:active {
+	background-color: darken($btn-danger-bg, 12%);
+      @include gradient-radial(darken($btn-danger-bg, 12%) 10%, $btn-danger-bg 11%);
+    }
 }
 
 

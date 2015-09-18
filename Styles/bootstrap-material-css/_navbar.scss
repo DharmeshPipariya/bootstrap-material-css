@@ -529,7 +529,7 @@
 // Inverse navbar
 
 .navbar-inverse {
-  background-color: $navbar-inverse-bg;
+  background-color: rgba($navbar-inverse-bg, 0.9);
   border-color: $navbar-inverse-border;
 
   .navbar-brand {
